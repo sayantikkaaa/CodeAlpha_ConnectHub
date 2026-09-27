@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConnectHub - Social Media</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>ConnectHub 💜</h1>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#profile">Profile</a>
+            <a href="#posts">Posts</a>
+            <a href="#login">Login</a>
+        </nav>
+    </header>
+
+    <!-- Profile -->
+    <section class="profile" id="profile">
+        <div class="profile-pic">👩🏻</div>
+
+        <div>
+            <h2>Sayantika Boral</h2>
+            <p>@sayantika</p>
+            <p>✨ CSE Student | Beauty & Tech | Creator</p>
+
+            <div class="stats">
+                <span><b>120</b> Followers</span>
+                <span><b>85</b> Following</span>
+                <span><b>12</b> Posts</span>
+            </div>
+
+            <button onclick="followUser()">Follow</button>
+        </div>
+    </section>
+
+    <!-- Create Post -->
+    <section class="create-post">
+        <h2>Create a Post ✍️</h2>
+
+        <textarea id="postInput" placeholder="What's on your mind?"></textarea>
+
+        <button onclick="createPost()">Post</button>
+    </section>
+
+    <!-- Posts -->
+    <main id="posts">
+        <h2>Recent Posts</h2>
+
+        <div id="postContainer">
+
+            <article class="post">
+                <div class="post-header">
+                    <div class="small-pic">👩🏻</div>
+                    <div>
+                        <b>Sayantika Boral</b>
+                        <small>@sayantika</small>
+                    </div>
+                </div>
+
+                <p>Building my first social media platform! 💻💜</p>
+
+                <div class="actions">
+                    <button onclick="likePost(this)">❤️ Like <span>0</span></button>
+                    <button onclick="showComment(this)">💬 Comment</button>
+                </div>
+
+                <div class="comment-box">
+                    <input type="text" placeholder="Write a comment...">
+                    <button onclick="addComment(this)">Post</button>
+                    <div class="comments"></div>
+                </div>
+            </article>
+
+            <article class="post">
+                <div class="post-header">
+                    <div class="small-pic">👩🏻</div>
+                    <div>
+                        <b>Sayantika Boral</b>
+                        <small>@sayantika</small>
+                    </div>
+                </div>
+
+                <p>Learning HTML, CSS, JavaScript and Express.js 🚀</p>
+
+                <div class="actions">
+                    <button onclick="likePost(this)">❤️ Like <span>0</span></button>
+                    <button onclick="showComment(this)">💬 Comment</button>
+                </div>
+
+                <div class="comment-box">
+                    <input type="text" placeholder="Write a comment...">
+                    <button onclick="addComment(this)">Post</button>
+                    <div class="comments"></div>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 ConnectHub | CodeAlpha Task 2</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
